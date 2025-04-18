@@ -41,7 +41,7 @@
    [c "The number of default parameters the function has."]
    [d "The total number of parameters the function has."])
 
-  (d))
+  (answer d))
 
 
 ;; 3. The [Je] instruction on this line will jump when...
@@ -50,7 +50,7 @@
    [b "The function has received enough arguments for only the required parameters."]
    [c "The function has received enough arguments for only the default parameters."])
 
-  (a))
+  (answer a))
 
 
 ;; 4. The code here generates instructions corresponding to each possible number

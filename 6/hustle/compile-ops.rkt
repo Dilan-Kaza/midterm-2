@@ -154,7 +154,7 @@
             (Mov r9 rbx)
             (Xor r9 type-cons)
             (Mov (Offset rax 0) r9)
-            (Add rax 16)
+            (Mov rax rbx)
             (Jne loop)
 
             (Pop r9)                   ;get counter
@@ -175,6 +175,7 @@
             (Mov r9 (value->bits '()))
             (Mov (Offset rax 0) r9)
             (Xor rax type-cons)
+            (assert-list rax)
             ;; TODO ?
 
             (Label done)))]))
